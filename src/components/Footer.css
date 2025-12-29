@@ -1,0 +1,158 @@
+/* ===============================
+   FOOTER BASE
+================================ */
+.footer {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 60px 20px 20px;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   FOOTER CONTENT GRID
+================================ */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* ===============================
+   FOOTER SECTION
+================================ */
+.footer-section h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* ===============================
+   QUICK LINKS
+================================ */
+.footer-links div {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+/* CTA link */
+.cta-link {
+  font-weight: 600;
+  color: #a5b4fc !important;
+}
+
+/* ===============================
+   SOCIAL ICONS
+================================ */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  background: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #e5e7eb;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #4f46e5;
+  transform: translateY(-4px);
+}
+
+/* ===============================
+   DIVIDER
+================================ */
+.footer hr {
+  border: none;
+  height: 1px;
+  background: #374151;
+  margin: 40px auto 20px;
+  max-width: 1200px;
+}
+
+/* ===============================
+   FOOTER BOTTOM
+================================ */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* ===============================
+   MOBILE VIEW
+================================ */
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 16px 18px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.25rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+/* ===============================
+   TABLET VIEW
+================================ */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer-content {
+    gap: 32px;
+  }
+}
+
+/* ===============================
+   LARGE SCREENS
+================================ */
+@media (min-width: 1440px) {
+  .footer-content {
+    max-width: 1400px;
+  }
+
+  .footer {
+    padding: 70px 20px 24px;
+  }
+}
